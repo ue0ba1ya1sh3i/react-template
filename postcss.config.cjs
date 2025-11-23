@@ -1,4 +1,4 @@
-export default {
+module.exports = {
   plugins: {
     tailwindcss: {},
     autoprefixer: {},
@@ -8,10 +8,10 @@ export default {
       stage: 1,
 
       features: {
-        "nesting-rules": true
-      }
+        "nesting-rules": true,
+      },
     },
 
-    ...(process.env.NODE_ENV === "production" ? { cssnano: {} } : {})
-  }
-}
+    ...(process.env.NODE_ENV === "production" ? { cssnano: {} } : {}),
+  },
+};
